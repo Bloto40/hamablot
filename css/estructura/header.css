@@ -1,0 +1,36 @@
+@charset "UTF-8";
+header {
+  padding: 20px 0;
+  position: absolute;
+  z-index: 3000000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .menu-item a, header .logo a {
+  color: #3498db;
+  font-size: 20px;
+  padding: 0 18px;
+  text-decoration: none;
+}
+header .logo a {
+  font-family: "Pixelify+Sans", "Poppins";
+  font-size: 36px;
+  padding: 0 16px;
+}
+
+/* Estilos para pantallas más pequeñas, como dispositivos móviles */
+/* Estilos para tabletas */
+/* Estilos para pantallas más grandes, como computadoras de escritorio */
+
+/*# sourceMappingURL=header.css.map */

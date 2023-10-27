@@ -1,133 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;    
-}
-
-/*-----Header-----*/
+@charset "UTF-8";
+/* Header */
 header {
-  background-color: rgba(240, 240, 240, 0.1);
-  padding: 20px 0px;
+  padding: 20px 0;
   position: absolute;
   z-index: 3000000;
   width: 100%;
   top: 0;
   left: 0;
-}
-
-/* Estilos del menú de navegación */
-header ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+header ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
-/* Estilos del logotipo */
-header .logo {
-  /* Agrega margen derecho para separar el logotipo del menú */
-  margin-right: 20px;
-}
-
-header .logo a {
-  font-family: "Pixelify+Sans", 'Poppins';
-  font-size: 36px;
-  padding: 0px 16px;
-  letter-spacing: 0; /* Reajusta el espaciado de letras a 0 */
-  text-decoration: none;
-}
-
-/* Estilos de los elementos del menú */
-header .menu-item a {
-  color: rgb(65, 164, 235);
+header .menu-item a, header .logo a {
+  color: #3498db;
   font-size: 20px;
-  padding: 0px 18px;
+  padding: 0 18px;
   text-decoration: none;
 }
-/*----Inicio----*/
-.parallax-home {
-    height: 100vh;
-    background-image: url('../multimedia/imagenes/game\ over.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .parallax-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .parallax-content h1 {
-    font-size: 3em;
-    margin: 0;
-  }
-  
-  .parallax-content p {
-    font-size: 1.5em;
-    margin: 0;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #3498db;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-  
-  .cta-button:hover {
-    background-color: #2980b9;
-  }
-  
-  .content {
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
+header .logo a {
+  font-family: "Pixelify+Sans", "Poppins";
+  font-size: 36px;
+  padding: 0 16px;
+}
 
-  .content h2 {
-    font-size: 2em;
-  }
-  
-  .content p {
-    font-size: 1.2em;
-  }
-/*---bienvenidos seccion---*/
+/* Estilos para pantallas más pequeñas, como dispositivos móviles */
+/* Estilos para tabletas */
+/* Estilos para pantallas más grandes, como computadoras de escritorio */
+/* Inicio */
+.parallax-home {
+  height: 100vh;
+  background-image: url("../multimedia/imagenes/game-over.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.parallax-home .parallax-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.parallax-home .parallax-content h1 {
+  font-size: 3em;
+  margin: 0;
+}
+.parallax-home .parallax-content p {
+  font-size: 1.5em;
+  margin: 0;
+}
+.parallax-home .parallax-content .cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.parallax-home .parallax-content .cta-button:hover {
+  background-color: #2980b9;
+}
+
+/* Content */
+.content {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.content h2 {
+  font-size: 2em;
+}
+.content p {
+  font-size: 1.2em;
+}
+
+/* Bienvenidos Sección */
 .bienvenidos-seccion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px;
-  background-color: #dfbebe; /* Color de fondo de la sección */
+  background-color: #dfbebe;
 }
-
-.content-bienvenidos {
+.bienvenidos-seccion .content-bienvenidos {
   max-width: 100%;
   text-align: center;
 }
-
-h1 {
+.bienvenidos-seccion .content-bienvenidos h1 {
   font-size: 2em;
   margin-bottom: 20px;
 }
-
-p {
+.bienvenidos-seccion .content-bienvenidos p {
   font-size: 1em;
   margin-bottom: 10px;
 }
-.button {
+.bienvenidos-seccion .content-bienvenidos .button {
   padding: 10px 20px;
   border: none;
   background-color: #3498db;
@@ -136,103 +117,98 @@ p {
   cursor: pointer;
   font-size: 1em;
 }
-
-.button:hover {
+.bienvenidos-seccion .content-bienvenidos .button:hover {
   background-color: #2980b9;
 }
 
-  /*---seccion container home medio---*/
-  .section-container-home-medio {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    text-align: center; /* Centra el contenido */
-    padding: 50px; /* Espacio alrededor del contenido */
-    box-sizing: border-box; /* El padding se incluye en el ancho total */
-    background-color: #dfbebe; /* Color de fondo de la sección */
-  }
-  
-  .content-home-medio {
-    max-width: 800px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-  }
-  
-  h2 {
-    font-size: 2em;
-    padding-top: 10px;
-    margin-bottom: 50px;
-  }
-  
-  h3 {
-    font-size: 1.5em;
-    margin-bottom: 50px;
-  }
+/* Sección Container Home Medio */
+.section-container-home-medio {
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #dfbebe;
+}
+.section-container-home-medio .content-home-medio {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section-container-home-medio .content-home-medio h2 {
+  font-size: 2em;
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+.section-container-home-medio .content-home-medio h3 {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
 
-/*---seccion targetas--*/
+/* Estilos de la sección de tarjetas */
 .targetas-home {
   background-color: #dfbebe;
   display: flex;
   justify-content: space-around;
   padding: 20px;
 }
-
-.targeta-home {
+.targetas-home .targeta-home {
   width: 200px;
   padding: 20px;
-  background-color: #e99de4;
+  background-color: rgba(233, 157, 228, 0.1882352941);
   border-radius: 10px;
   text-align: center;
 }
-
-.targeta-imagen {
+.targetas-home .targeta-home .targeta-imagen {
   width: 100%;
   border-radius: 10px;
 }
-
-.titulo-targeta {
+.targetas-home .targeta-home .titulo-targeta {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
-
-.descripcion-targeta {
+.targetas-home .targeta-home .descripcion-targeta {
   font-size: 1em;
 }
 
-  /*---- tutoriales home ----*/
-  .tutoriales-home {
-    background-color: #dfbebe;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .content-tutoriales-home {
-    text-align: center;
-  }
-  
-  .video-container {
-    margin-top: 20px;
-  }
-  
-  .video-container iframe {
-    width: 100%;
-  }
-  
-  h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 1em;
-  }
-  
-  h3 {
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
+/* Estilos de la sección de tutoriales */
+.tutoriales-home {
+  background-color: #dfbebe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.tutoriales-home .content-tutoriales-home {
+  text-align: center;
+}
+.tutoriales-home .content-tutoriales-home .video-container {
+  margin-top: 20px;
+}
+.tutoriales-home .content-tutoriales-home .video-container iframe {
+  width: 100%;
+}
+.tutoriales-home .content-tutoriales-home h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.tutoriales-home .content-tutoriales-home p {
+  font-size: 1em;
+}
+.tutoriales-home .content-tutoriales-home h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
 
-/*---seccion contacto--*/
+/* Estilos comunes */
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
 
+p {
+  font-size: 1em;
+}
+
+/* Estilos de la sección de formulario de contacto */
 .seccion-formulario {
   background-color: #dfbebe;
   display: flex;
@@ -240,38 +216,31 @@ p {
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-.column {
+.seccion-formulario .column {
   padding: 20px;
 }
-
-.imagen-columna img {
+.seccion-formulario .column .imagen-columna img {
   max-width: 100%;
 }
-
-.formulario-columna {
-  background-color: #e99de430;
+.seccion-formulario .column .formulario-columna {
+  background-color: rgba(233, 157, 228, 0.1882352941);
   border-radius: 10px;
-  margin-left: 20px; /* Ajusta la separación entre la imagen y el formulario */
+  margin-left: 20px;
 }
-
-form {
+.seccion-formulario .column .formulario-columna form {
   display: flex;
   flex-direction: column;
 }
-
-label {
+.seccion-formulario .column .formulario-columna form label {
   margin-bottom: 5px;
 }
-
-input, textarea {
+.seccion-formulario .column .formulario-columna form input, .seccion-formulario .column .formulario-columna form textarea {
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
-button {
+.seccion-formulario .column .formulario-columna form button {
   padding: 10px 20px;
   border: none;
   background-color: #3498db;
@@ -279,336 +248,235 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-
-button:hover {
+.seccion-formulario .column .formulario-columna form button:hover {
   background-color: #2980b9;
 }
 
-/*---- Footer----*/
+/* Estilos del pie de página */
 .footer-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e99de430;
+  background-color: rgba(233, 157, 228, 0.1882352941);
 }
-
-.column {
-  padding: 10px;
-}
-
-.left-column img {
+.footer-section .left-column img {
   max-width: 100px;
 }
-
-.left-column h2 {
+.footer-section .left-column h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
-
-.left-column p {
+.footer-section .left-column p {
   font-size: 0.8em;
 }
-
-.right-column p {
+.footer-section .right-column p {
   font-size: 0.8em;
   margin: 0;
   align-self: flex-end;
 }
 
-/*-----Nosotros-----*/
+/* Section Nosotros */
 .parallax-nosotros {
-    height: 100vh;
-    background-image: url('../multimedia/imagenes/camara.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .parallax-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .parallax-content h1 {
-    font-size: 3em;
-    margin: 0;
-  }
-  
-  .parallax-content p {
-    font-size: 1.5em;
-    margin: 0;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #3498db;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-  
-  .cta-button:hover {
-    background-color: #2980b9;
-  }
-
-  .section-container-nosotros {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    text-align: center; /* Centra el contenido */
-    padding: 50px; /* Espacio alrededor del contenido */
-    box-sizing: border-box; /* El padding se incluye en el ancho total */
-    background-color: #dfbebe; /* Color de fondo de la sección */
-  }
-  
-  .content-nosotros {
-    max-width: 800px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-  }
-  
-  h2 {
-    font-size: 2em;
-    padding-top: 10px;
-    margin-bottom: 50px;
-  }
-  
-  h3 {
-    font-size: 1.5em;
-    margin-bottom: 50px;
-  }
-
-  .imagen-seccion-pablo {
-    background-color: #dfbebe;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .imagen-pablo img {
-    max-width: 100%;
-  }
-  /*-----Tutoriales-----*/
-  .parallax-tutoriales {
-    height: 100vh;
-    background-image: url('../multimedia/imagenes/hama\ picachu.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .seccion-tutoriales {
-    padding: 20px;
-    background-color:#dfbebe; /* Color de fondo */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .nueva-seccion h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .nueva-seccion p {
-    font-size: 1em;
-  }
-
-  .videos-seccion-tutoriales {
-    background-color: #dfbebe;
-    padding: 20px;
-  }
-  
-  .videos-tutoriales {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .videos-tutoriales h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .videos-tutoriales p {
-    font-size: 1em;
-  }
-  
-  .video-galleria-tutoriales {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .video {
-    width: 48%; /* Ajusta el ancho de cada video según tu preferencia */
-    margin: 1%;
-  }
-  
-  .video iframe {
-    width: 100%;
-    border: 1px solid #ccc; /* Borde para cada video */
-    border-radius: 10px; /* Bordes redondeados */
-  }
-
-
-  /*----Blog----*/
-  body.page-blog {
-    background-color: #dfbebe; /* Color de fondo para la página específica (gris claro) */
-  }
-
-  .section-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Espacio en la parte superior */
-    padding: 20px;
-  }
-  
-  .column-notas {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .column-notas img {
-    width: 100%; /* La imagen ocupará todo el espacio disponible */
-    display: block;
-    border-radius: 30px;
-  }
-  
-  .column-notas h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    padding: 20px;
-  }
-  
-  .column-notas p {
-    font-size: 1em;
-  }
-  
-  /* Estilo adicional para hacerlo más estético */
-  .column-notas {
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin: 5px;
-  }
-
-  /*-----Contacto-----*/
-  body.page-contacto {
-    background-color: #f8c4c4; /* Color de fondo para la página específica (gris claro) */
-  }  
-  
-  .section-hero-contacto {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    margin-top: 50px; /* Margen superior de 100px */
-  }
-  
-  .content-contacto {
-    padding: 100px;
-    text-align: center; /* Centra el texto dentro de la sección */
-    max-width: 600px; /* Ancho máximo para el contenido */
-    background-color:#f8c4c4;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1em;
-    color: rgb(255, 255, 255);
-    background-color: #3498db;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-  
-  .cta-button:hover {
-    background-color: #2980b9;
-  }
-
-  .section-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 150px; /* Espacio en la parte superior */
-  }
-  
-  .column {
-    padding: 20px;
-  }
-  
-  .column img {
-    width: 100%; /* La imagen ocupará todo el espacio disponible */
-    display: block;
-  }
-  
-  .column:last-child {
-    margin-left: 20px; /* Espacio entre las columnas */
-    max-width: 400px; /* Ancho máximo para el formulario */
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 5px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: white;
-    background-color: #3498db;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .cta-button:hover {
-    background-color: #2980b9;
-  }
-
-  /* Responsive */
-  @media (max-width: 375px) {
-    header ul {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    /* Mueve el logotipo al principio en la versión móvil */
-    header .logo {
-        margin-right: 0; 
-        margin-bottom: 10px; 
-    }
+  height: 100vh;
+  background-image: url("../multimedia/imagenes/camara.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.parallax-nosotros .parallax-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.parallax-nosotros .parallax-content h1 {
+  font-size: 3em;
+  margin: 0;
+}
+.parallax-nosotros .parallax-content p {
+  font-size: 1.5em;
+  margin: 0;
+}
+.parallax-nosotros .parallax-content .cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.parallax-nosotros .parallax-content .cta-button:hover {
+  background-color: #2980b9;
 }
 
-@media (min-width: 376px) and (max-width: 992px) {
-  header ul {
-    flex-direction: column; 
-    align-items: center;
+/* Section Pablo Imagen */
+.imagen-seccion-pablo {
+  background-color: #dfbebe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-seccion-pablo .imagen-pablo img {
+  max-width: 100%;
 }
 
-/* Mueve el logotipo al principio en la versión móvil */
-header .logo {
-    margin-right: 0; 
-    margin-bottom: 10px; 
+/* Section Tutoriales */
+.parallax-tutoriales {
+  height: 100vh;
+  background-image: url("../multimedia/imagenes/hama picachu.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
+.parallax-tutoriales .seccion-tutoriales {
+  padding: 20px;
+  background-color: #dfbebe;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.parallax-tutoriales .seccion-tutoriales .nueva-seccion h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.parallax-tutoriales .seccion-tutoriales .nueva-seccion p {
+  font-size: 1em;
+}
+.parallax-tutoriales .videos-seccion-tutoriales {
+  background-color: #dfbebe;
+  padding: 20px;
+}
+.parallax-tutoriales .videos-seccion-tutoriales .videos-tutoriales {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.parallax-tutoriales .videos-seccion-tutoriales .videos-tutoriales h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.parallax-tutoriales .videos-seccion-tutoriales .videos-tutoriales p {
+  font-size: 1em;
+}
+.parallax-tutoriales .videos-seccion-tutoriales .video-galleria-tutoriales {
+  display: flex;
+  flex-wrap: wrap;
+}
+.parallax-tutoriales .videos-seccion-tutoriales .video-galleria-tutoriales .video {
+  width: 48%;
+  margin: 1%;
+}
+.parallax-tutoriales .videos-seccion-tutoriales .video-galleria-tutoriales .video iframe {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
+/* Section Blog */
+body.page-blog {
+  background-color: #dfbebe;
+}
+body.page-blog .section-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+body.page-blog .section-container .column-notas {
+  padding: 20px;
+  text-align: center;
+}
+body.page-blog .section-container .column-notas img {
+  width: 100%;
+  display: block;
+  border-radius: 30px;
+}
+body.page-blog .section-container .column-notas h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+body.page-blog .section-container .column-notas p {
+  font-size: 1em;
+}
 
+/* Section Contacto */
+body.page-contacto {
+  background-color: #f8c4c4;
+}
+body.page-contacto .section-hero-contacto {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+body.page-contacto .section-hero-contacto .content-contacto {
+  padding: 100px;
+  text-align: center;
+  max-width: 600px;
+  background-color: #f8c4c4;
+}
+body.page-contacto .section-hero-contacto .content-contacto .cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  background-color: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+body.page-contacto .section-hero-contacto .content-contacto .cta-button:hover {
+  background-color: #2980b9;
+}
+body.page-contacto .section-hero-contacto .section-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+body.page-contacto .section-hero-contacto .section-container .column {
+  padding: 20px;
+}
+body.page-contacto .section-hero-contacto .section-container .column img {
+  width: 100%;
+  display: block;
+}
+body.page-contacto .section-hero-contacto .section-container .column:last-child {
+  margin-left: 20px;
+  max-width: 400px;
+}
+body.page-contacto .section-hero-contacto .section-container .column:last-child form {
+  display: flex;
+  flex-direction: column;
+}
+body.page-contacto .section-hero-contacto .section-container .column:last-child form label {
+  margin-bottom: 5px;
+}
+body.page-contacto .section-hero-contacto .section-container .column:last-child form input, body.page-contacto .section-hero-contacto .section-container .column:last-child form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+body.page-contacto .section-hero-contacto .section-container .column:last-child form .cta-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #3498db;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+body.page-contacto .section-hero-contacto .section-container .column:last-child form .cta-button:hover {
+  background-color: #2980b9;
+}
+
+/*# sourceMappingURL=estilos.css.map */
