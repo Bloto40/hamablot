@@ -32,30 +32,9 @@
       padding: 0 16px;
     }
   }
-
-  /* Estilos para pantallas más pequeñas, como dispositivos móviles */
-@media screen and (max-width: 375px) {
-    // Estilos para dispositivos móviles
-}
-
-/* Estilos para tabletas */
-@media screen and (min-width: 376px) and (max-width: 960px) {
-    // Estilos para tabletas
-}
-
-/* Estilos para pantallas más grandes, como computadoras de escritorio */
-@media screen and (min-width: 961px) {
-    // Estilos para computadoras de escritorio
-}
-  /* Inicio */
+ /*---home---*/
   .parallax-home {
-    height: 100vh;
     background-image: url('../multimedia/imagenes/game-over.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
   
     .parallax-content {
       display: flex;
@@ -108,7 +87,7 @@
     }
   }
   
-  /* Bienvenidos Sección */
+  /* Bienvenidos home */
   .bienvenidos-seccion {
     display: flex;
     flex-direction: column;
@@ -147,7 +126,7 @@
     }
   }
   
-  /* Sección Container Home Medio */
+  /*  Container Home Medio */
   .section-container-home-medio {
     width: 100%;
     text-align: center;
@@ -172,7 +151,7 @@
     }
   }
   
-  /* Estilos de la sección de tarjetas */
+  /* tarjetas home */
   .targetas-home {
       background-color: #dfbebe;
       display: flex;
@@ -202,7 +181,7 @@
       }
   }
   
-  /* Estilos de la sección de tutoriales */
+  /* sección de tutoriales home */
   .tutoriales-home {
       background-color: #dfbebe;
       display: flex;
@@ -246,8 +225,16 @@
   p {
       font-size: 1em;
   }
+  #parallax{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
   
-  /* Estilos de la sección de formulario de contacto */
+  /* sección de formulario de contacto home */
   .seccion-formulario {
       background-color: #dfbebe;
       display: flex;
@@ -299,7 +286,7 @@
       }
   }
   
-  /* Estilos del pie de página */
+  /* pie de página */
   .footer-section {
       display: flex;
       justify-content: space-between;
@@ -328,15 +315,9 @@
       }
   }
   
-  /* Section Nosotros */
+  /*---Nosotros--- */
   .parallax-nosotros {
-    height: 100vh;
     background-image: url('../multimedia/imagenes/camara.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
   
     .parallax-content {
       display: flex;
@@ -375,7 +356,7 @@
     }
   }
   
-  /* Section Pablo Imagen */
+  /* Pablo Imagen */
   .imagen-seccion-pablo {
     background-color: #dfbebe;
     display: flex;
@@ -387,15 +368,9 @@
     }
   }
   
-  /* Section Tutoriales */
+  /*---Tutoriales--- */
   .parallax-tutoriales {
-    height: 100vh;
     background-image: url('../multimedia/imagenes/hama picachu.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
   
     .seccion-tutoriales {
       padding: 20px;
@@ -452,7 +427,7 @@
     }
   }
   
-  /* Section Blog */
+  /*---Blog--- */
   body.page-blog {
     background-color: #dfbebe;
   
@@ -485,7 +460,7 @@
     }
   }
   
-  /* Section Contacto */
+  /*---Contacto--- */
   body.page-contacto {
     background-color: #f8c4c4;
   
@@ -565,3 +540,18 @@
       }
     }
   }
+
+    /* Estilos para pantallas más pequeñas, como dispositivos móviles */
+@media screen and (max-width: 375px) {
+  // Estilos para dispositivos móviles
+}
+
+/* Estilos para tabletas */
+@media screen and (min-width: 376px) and (max-width: 960px) {
+  // Estilos para tabletas
+}
+
+/* Estilos para pantallas más grandes, como computadoras de escritorio */
+@media screen and (min-width: 961px) {
+  // Estilos para computadoras de escritorio
+}
