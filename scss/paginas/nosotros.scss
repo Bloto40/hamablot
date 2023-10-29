@@ -1,0 +1,58 @@
+ /* Section Nosotros */
+ .parallax-nosotros {
+    height: 100vh;
+    background-image: url('../multimedia/imagenes/camara.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+    .parallax-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: white;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+  
+      h1 {
+        font-size: 3em;
+        margin: 0;
+      }
+  
+      p {
+        font-size: 1.5em;
+        margin: 0;
+      }
+  
+      .cta-button {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        color: white;
+        background-color: #3498db;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+  
+        &:hover {
+          background-color: #2980b9;
+        }
+      }
+    }
+  }
+  
+  /* Section Pablo Imagen */
+  .imagen-seccion-pablo {
+    background-color: #dfbebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .imagen-pablo img {
+      max-width: 100%;
+    }
+  }
