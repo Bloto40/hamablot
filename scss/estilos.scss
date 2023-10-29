@@ -1,5 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'poppins', sans-serif;
+}
  
-  /* Header */
+ /* Header */
   header {
     padding: 20px 0;
     position: absolute;
@@ -541,17 +546,27 @@
     }
   }
 
-    /* Estilos para pantallas más pequeñas, como dispositivos móviles */
-@media screen and (max-width: 375px) {
-  // Estilos para dispositivos móviles
+    /* dispositivos móviles */
+@media (max-width: 375px) {
+  header{
+    height: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-/* Estilos para tabletas */
-@media screen and (min-width: 376px) and (max-width: 960px) {
-  // Estilos para tabletas
+/* tabletas */
+@media (min-width: 376px) and (max-width: 960px) {
+    body{
+      background-color: black;
+    }
 }
 
-/* Estilos para pantallas más grandes, como computadoras de escritorio */
-@media screen and (min-width: 961px) {
-  // Estilos para computadoras de escritorio
+/* computadoras de escritorio */
+@media (min-width: 961px) {
+    body{
+      background-color: #dfbebe;
+    }
 }
